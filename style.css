@@ -40,10 +40,15 @@ header{
     align-items: flex-start;
     gap: 16px; /* Espaçamento entre a imagem e o conteúdo */
 }
+.action{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
 .main__image {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    height: fit-content;
+    
 }
 .main__left {
     display: flex;
