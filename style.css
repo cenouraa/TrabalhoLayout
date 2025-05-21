@@ -47,13 +47,28 @@ header{
 }
 .main__left {
     display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 14px;
 }
 .main__text{
-    margin-left: 160px;
-    height: 100%;
+    
 }
 .main__text p{
-    padding-bottom: 24px;
+}
+.main__cta{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #00001a;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #f15d51;
+    padding: 10px 24px;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: content-box;
+
 }
 .main__left h1{
     margin: 10px 0;
@@ -92,13 +107,4 @@ header{
 margin-left: 100px;
 } */
 
-.main__cta{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #00001a;
-    font-size: 1.2em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    background-color: #f15d51;
-    padding: 10px 24px;
-}
+
