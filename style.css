@@ -48,11 +48,20 @@ header{
 .main__left {
     display: flex;
     flex-direction: row;
-    gap: 24px;
     margin-top: 14px;
 }
 .main__text{
-    
+    position: absolute;
+    margin-left: 400px;
+    max-width: 350px; 
+}
+.main__left h1{
+    margin: 10px 0;
+    font-weight: bold;
+    line-height: 95%;
+    font-size: 5em;
+    position: absolute;
+    max-width: 300px;
 }
 .main__text p{
 }
@@ -70,12 +79,7 @@ header{
     box-sizing: content-box;
 
 }
-.main__left h1{
-    margin: 10px 0;
-    font-weight: bold;
-    line-height: 95%;
-    font-size: 5em;
-}
+
 .news{
     background-color: #00001a;
 }
@@ -103,8 +107,40 @@ header{
 .news__item p{
     font-size: 1.4em;
 }
-/* .main__text {
-margin-left: 100px;
-} */
+.list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12vh;
+    padding: 0;
+}
+.list-item{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    height: 100%;
+}
+.list-item__image{
+    height: 100%;
+    flex: 0 0 auto;
+}
+.list-item__image img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    display: block;
+}
+.list-item__content{
+    flex: 1; /* O texto ocupa o resto do espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Centraliza verticalmente o conteúdo */
+}
+.list-item__content h3{
+    margin: 0;
+    font-size: 3em;
+}
+.list-item__content h4{
+    margin: 0;
+}
 
 
