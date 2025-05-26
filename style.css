@@ -5,25 +5,24 @@ h1{
     font-size: 2.4em;
 }
 p, a{
-    font-size: 1.6em; /*1em = 10px*/
+    font-size: 1.5em; /*1em = 10px*/
 }
 body{
     width: 90%;
-    max-width: 1100px;
+    max-width: 107rem;
     margin: 0 auto; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header{
     display: flex;
-    padding: 16px;
+    padding: 6.4rem 0;
     justify-content: space-between;
     align-items: center;
 }
 .header__nav ul{
     display: flex;
-    justify-content: space-between;
     list-style-type: none;
-    gap: 16px;
+    gap: 3.6rem;
 }
 .header__nav a{
     text-decoration: none;
@@ -38,7 +37,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 24px;
+    gap: 2.4rem;
 }
 .action{
     display: flex;
@@ -48,22 +47,26 @@ header{
 .main__left {
     display: flex;
     flex-direction: row;
-    margin-top: 14px;
+    margin-top: 1.4rem;
 }
 .main__text{
     position: absolute;
-    margin-left: 400px;
-    max-width: 350px; 
+    margin-left: 40rem;
+    max-width: 33rem;
+}
+.main__text p{
+    color: rgb(117, 115, 124)
 }
 .main__left h1{
-    margin: 10px 0;
+    margin: 1rem 0;
     font-weight: bold;
     line-height: 95%;
     font-size: 5em;
     position: absolute;
-    max-width: 300px;
+    max-width: 30rem;
 }
-.main__text p{
+.main__button{
+    margin-top: 3.6rem;
 }
 .main__cta{
     text-decoration: none;
@@ -71,31 +74,37 @@ header{
     color: #00001a;
     font-size: 1.2em;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     background-color: #f15d51;
-    padding: 10px 24px;
-    width: fit-content;
-    max-width: 100%;
-    box-sizing: content-box;
+    padding: 1.2rem 2.8rem;
 
+}
+.main__left h1{
+    margin: 1rem 0;
+    font-weight: bold;
+    line-height: 95%;
+    font-size: 5em;
+    position: absolute;
+    max-width: 30rem;
 }
 
 .news{
     background-color: #00001a;
+    height: 46.5em;
 }
 .news__list{
-    padding: 0 24px;
+    padding: 0 2.4rem;
     margin: 0;
 }
 .news h1{
     color: #e8ae4d;
     font-size: 4em;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 .news__item{
     color: aliceblue;
-    padding: 10px 0 10px 0;
+    padding: 1rem 0 1rem 0;
     border-bottom: 1px solid aliceblue;
 }
 .news__item:last-child{
@@ -106,17 +115,20 @@ header{
 }
 .news__item p{
     font-size: 1.4em;
+    color: rgb(176, 174, 184)
 }
 .list{
     display: flex;
     flex-direction: row;
     margin-top: 12vh;
     padding: 0;
+    justify-content: space-between;
 }
 .list-item{
+    flex: 1;
     display: flex;
     list-style-type: none;
-    gap: 20px;
+    gap: 2rem;
     height: 100%;
 }
 .list-item__image{
@@ -130,10 +142,8 @@ header{
     display: block;
 }
 .list-item__content{
-    flex: 1; /* O texto ocupa o resto do espaço */
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /* Centraliza verticalmente o conteúdo */
 }
 .list-item__content h3{
     margin: 0;
@@ -142,5 +152,16 @@ header{
 .list-item__content h4{
     margin: 0;
 }
-
-
+.list-item__number{
+    color: #e66251;
+    font-size: 2em;
+}
+.list-item__title{
+    font-size: 1.7em;
+}
+.list-item p{
+    margin: 0;
+    font-size: 1.4em;
+    padding-top: .8rem;
+    color: rgb(117, 115, 124)
+}
